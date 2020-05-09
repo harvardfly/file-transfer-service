@@ -1,5 +1,5 @@
 # file-transfer-service
-go micro 批量文件处理service
+go micro 批量文件处理service, 客户端流模式，服务端recv，客户端先send文件流在recv返回值
 
 ## 技术架构
 ```$xslt
