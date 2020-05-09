@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+service File {
+    //流式传输的服务接口
+    rpc File (stream FileRequest) returns (FileResponse) {
+    }
+}
+//定义文件传输切片 Stream类型
+message FileRequest {
+    bytes byte = 1;
+    int64 len = 2;
+}
+
+message FileResponse {
+    string file_name = 1;
+}
+
